@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel web page</title>
+  <link rel="stylesheet" href="travel.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="rough.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<div class="carrier" style="background-color: skyblue;">
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success" >
+      <a class="navbar-brand" href="#"><img src="./images/WhatsApp Image 2023-10-08 at 7.07.53 AM.jpeg" alt="no img"
+          style="height: 50px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="#home"><b>Home</b> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#about us"><b>About</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#our services"><b>Services</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#destinations"><b>Destination</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#about us"><b>Contact us</b></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- corousel -->
+
+    <section id="home">
+
+      <div class="carrier p-0" style="position: relative;">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active  " data-bs-interval="20000 ">
+              <div class="destination-images"> <img src="./images/354970.jpg" class="slide d-block w-100" alt="no image"
+                >
+                <div class="carousel-caption col1-md">
+                  <h2 style="margin-top: -200px; opacity: 2200; color: skyblue;">Journey to new Horizon </h2>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="20000 ">
+              <div class="destination-images"> <img src="./images/pxfuel (1).jpg" class="slide d-block w-100" alt="no image"
+                  >
+                <div class="carousel-caption col1-md">
+                  <h2 class="text-warning" style="margin-top: -200px; opacity: 2200;">Discover the Wonders of the World!
+                  </h2>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="20000">
+              <div class="destination-images">
+                <img src="./images/5673549.jpg" class="slide d-block w-100" alt="no image" >
+                <div class="carousel-caption col1-md">
+                  <h3 style="margin-top: -200px; color: antiquewhite; ">Travel beyond boundaries</h3>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-warning" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-warning" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- search box -->
+      <div class="searchbox">
+        <div class="container p-2">
+          <div class="row ">
+            <div class="col-md offset-md">
+              <form>
+                <div class="input-group mb">
+                  <input type="text" class="form-control bg-warning text-dark"
+                    placeholder="Please type any countries or categories" aria-label="Search"
+                    aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn bg-success btn-outline-dark" type="button">Search</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section id="destinations">
+      <center>
+        <h2>Top Destinations</h2>
+      </center>
+      <div class="container bg-success w-100 p-3 d-flex align-items-center justify-content-center">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-2">
+
+                </div>
+                <!-- Repeat for Cards 2 to 7 -->
+                <div class="col-md-2">
+                  <div class="card bg-dark" style="height: 100%; width: 100%; border-radius: 20px;">
+                    <img src="./images/211126.jpg" class="card-img-top" alt="Country 1"
+                      style="height: 100%; border-radius: 20px;">
+                    <div class="card-body" style="height: 10px;">
+                      <center>
+                        <a href="">
+                          <h6 class="card-title text-warning" style="margin-top: -40px;">INDIA</h6>
+                        </a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeat for Cards 2 to 7 -->
+                <div class="col-md-2">
+                  <div class="card bg-dark" style="height: 100%; border-radius: 20px;">
+                    <img src="./images/87045.jpg" class="card-img-top" alt="Country 1"
+                      style="height: 100%; border-radius: 20px;">
+                    <div class="card-body">
+                      <center>
+                        <a href="">
+                          <h6 class="card-title text-warning" style="margin-top: -40px;">AUSTRALIA</h6>
+                        </a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeat for Cards 2 to 7 -->
+                <div class="col-md-2">
+                  <div class="card bg-dark;      " style="height: 100%; border-radius: 20px;">
+                    <img src="./images/18517.jpg" class="card-img-top" alt="Country 1"
+                      style="height: 100%; border-radius: 20px;">
+                    <div class="card-body">
+                      <center>
+                        <a href="">
+                          <h6 class="card-title text-warning" style="margin-top: -40px;">JAPAN</h6>
+                        </a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeat for Cards 2 to 7 -->
+                <div class="col-md-2">
+                  <div class="card bg-dark" style="height: 100%; border-radius: 20px;">
+                    <img src="./images/1093982.jpg" class="card-img-top" alt="Country 1"
+                      style="height: 100%; border-radius: 20px;">
+                    <div class="card-body">
+                      <center>
+                        <a href="">
+                          <h6 class="card-title text-warning" style="margin-top: -40px;">SWITZERLAND</h6>
+                        </a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeat for Cards 2 to 7 -->
+
+                <!-- Repeat for Cards 2 to 7 -->
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <!-- Card 8 -->
+                <div class="col-md-2">
+
+                </div>
+                <!-- Repeat for Cards 9 to 14 -->
+                <div class="col-md-2">
+                  <div class="card bg-dark" style="height: 100%; border-radius: 20px;">
+                    <img src="./images/189061.jpg" class="card-img-top" alt="Country 8"
+                      style="height: 100%; border-radius: 20px;">
+                    <div class="card-body">
+                      <center>
+                        <a href="">
+                          <h6 class="card-title text-warning" style="margin-top: -40px;">SINGAPORE</h6>
+                        </a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeat for Cards 9 to 14 -->
+                <div class="col-md-2">
+                  <div class="card" style="height: 100%; border-radius: 20px;">
+                    <img src="./images/46562.jpg" class="card-img-top" alt="Country 8"
+                      style="height: 100%; border-radius: 20px;">
+                    <div class="card-body">
+                      <center>
+                        <a href="">
+                          <h6 class="card-title text-warning" style="margin-top: -40px;">BRAZIL</h6>
+                        </a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeat for Cards 9 to 14 -->
+                <div class="col-md-2">
+                  <div class="card" style="height: 100%; border-radius: 20px;">
+                    <img src="./images/2960167.jpg" class="card-img-top" alt="Country 8"
+                      style="height: 100%; border-radius: 20px;">
+                    <div class="card-body">
+                      <center>
+                        <a href="">
+                          <h6 class="card-title text-warning" style="margin-top: -40px;">AMERICA</h6>
+                        </a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeat for Cards 9 to 14 -->
+                <div class="col-md-2">
+                  <div class="card" style="height: 100%; border-radius: 20px;">
+                    <img src="./images/447811.jpg" class="card-img-top" alt="Country 8"
+                      style="height: 100%; border-radius: 20px;">
+                    <div class="card-body">
+                      <center>
+                        <a href="">
+                          <h6 class="card-title text-warning" style="margin-top: -40px;">SPAIN</h6>
+                        </a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeat for Cards 9 to 14 -->
+                <div class="col-md-2">
+
+                </div>
+                <!-- Repeat for Cards 9 to 14 -->
+              </div>
+            </div>
+            <!-- Add more slides for additional sets of 7 cards -->
+          </div>
+
+          <!-- Controls -->
+
+
+          <a class="carousel-control-prev  btn-fluid p-0" href="#myCarousel" role="button " data-slide="prev">
+            <span class="carousel-control-prev-icon bg-warning" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon bg-warning" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+      </div>
+
+    </section>
+    <section id="our services">
+      <div class="visit">
+        <div class="visit saudi p-5 ms-5">
+          <center><u><img src="./images/881331.jpg" alt="no img" style="width: 50px; margin-top: -9px;"><span
+                class="ms-2  fs-2"><b>VISIT SAUDI ARABIA</b></span></u></center>
+
+        </div>
+
+        <div class="container w-100 p-3 d-flex align-items-center justify-content-center">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card card-gap" style="height: 100%;">
+                <a href=""><img src="./images/813084.jpg" alt="no img" class="card-img-top" style="height: 100%;">
+                  <div class="card-body" style="height: 100%;">
+                    <!-- Content for Card 1 -->
+                    <b>Visit Makkah</b>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo voluptates iste commodi vero, unde
+                      fugiat aspernatur, sed repellendus amet facilis modi quas minima eaque at maiores quis harum ex.
+                      Numquam
+                    </p>?
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-gap" style="height: 100%;">
+              <a href=""><img src="./images/GOAL_-_Multiple_Images_-_3_Stacked_-_Facebook_(1).webp" alt="no img"
+                  class="card-img-top">
+                <div class="card-body">
+                  <!-- Content for Card 2 -->
+                  <b>Grab your tickets for RSL match</b>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil cum minima temporibus,
+                    excepturi
+                    itaque fugiat nostrum nemo ullam, repellat obcaecati. Ullam voluptates dolore fugit ea culpa ipsa
+                    minima
+                    ab.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card-gap" style="height: 100%;">
+            <a href=""><img
+                src="./images/saudi-arabia-crown-prince-mohammad-bin-salman-pakistan-visit-reuters-16935320263x2.jpg"
+                alt="no img" class="card-img-top" style="height: 100%; ">
+              <div class="card-body">
+                <!-- Content for Card 3 -->
+                <b>Apply fo eVisa</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod, voluptatem error soluta placeat
+                  veritatis commodi? Hic fugiat sint modi asperiores provident. Culpa maxime eligendi in a architecto,
+                  numquam
+                  ullam?</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="height: 100%;">
+          <a href=""><img src="./images/sindalah-hero-thumb-fnl.webp" alt="no img" class="card-img-top"
+              style="height: 100%;">
+            <div class="card-body" style="height: 50%;">
+              <!-- Content for Card 4 -->
+              <b>Welcome to NEOM project</b>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere aperiam itaque recusandae vitae quis
+                repudiandae, pariatur eius cupiditate assumenda voluptate doloremque fugiat dolores eveniet dicta
+                distinctio
+                repellat voluptates earum laboriosam!</p>
+          </a>
+        </div>
+      </div>
+</div>
+
+
+<div class="visit">
+  <div class="visit france p-5 ms-5">
+    <center><u><img src="./images/397830.jpg" alt="no img" style="width: 50px; margin-top: -9px;"><span
+          class="ms-2  fs-2"><b>VISIT FRANCE</b></span></u></center>
+
+  </div>
+
+  <div class="container w-100 p-3 d-flex align-items-center justify-content-center">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card card-gap" style="height: 100%;">
+          <a href=""><img src="./images/Eiffel tower.jpg" alt="no img" class="card-img-top" style="height: 100%;">
+            <div class="card-body" style="height: 100%;">
+              <!-- Content for Card 1 -->
+              <b>Visit Eiffel tower</b>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo voluptates iste commodi vero, unde
+                fugiat aspernatur, sed repellendus amet facilis modi quas minima eaque at maiores quis harum ex.
+                Numquam
+              </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card card-gap" style="height: 100%;">
+        <a href=""><img src="./images/263974.jpg" alt="no img" class="card-img-top">
+          <div class="card-body">
+            <!-- Content for Card 2 -->
+            <b>Summer Activities & Adventorous Things To Do in France</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil cum minima temporibus,
+              excepturi
+              itaque fugiat nostrum nemo ullam, repellat obcaecati. Ullam voluptates dolore fugit ea culpa ipsa
+              minima
+              ab.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card card-gap" style="height: 100%;">
+      <a href=""><img src="./images/michael-fousert-Ql9PCaOhyyE-unsplash.jpg" alt="no img" class="card-img-top"
+          style="height: 40%; ">
+        <div class="card-body" style="margin-top: -220px;">
+          <!-- Content for Card 3 -->
+          <div class="card-content3 mt-1">
+            <b>Entry tickets at Orseana Museum</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod, voluptatem error soluta placeat
+              veritatis commodi? Hic fugiat sint modi asperiores provident. Culpa maxime eligendi in a architecto,
+              numquam
+              ullam?</p>
+          </div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="card" style="height: 100%;">
+    <a href=""><img src="./images/pxfuel.jpg" alt="no img" class="card-img-top" style="height: 100%;">
+      <div class="card-body" style="height: 50%;">
+        <!-- Content for Card 4 -->
+        <b>Book Flight Ticket to Paris</b>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere aperiam itaque recusandae vitae quis
+          repudiandae, pariatur eius cupiditate assumenda voluptate doloremque fugiat dolores eveniet dicta
+          distinctio
+          repellat voluptates earum laboriosam!</p>
+    </a>
+  </div>
+</div>
+</div><br><br><br>
+<hr>
+<hr>
+<hr>
+</section>
+
+
+<section id="about us">
+  <div class="containe text-center bg-dark p-4">
+    <div class="row">
+      <div class="col ">
+        <h4 class="text-light">Company</h4>
+        <ul style="margin-left: -30px;">
+          <li><a href="">Travel Go</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4 class="text-light">Contact</h4>
+        <ul style="margin-left: -20px;">
+          <li><a href="">Newsletter</a></li>
+          <li><a href="">Get in touch</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="text-light">Social</h4>
+        <!-- icons -->
+
+        <div class="icondiv col-md mt-4" style="display: flex; gap: 2rem; margin-left: 170px; width: 50px;">
+          <!-- icon1 -->
+          <div class="icon ">
+            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+
+
+          </div>
+          <!-- icon2 -->
+          <div class="icon">
+            <a href="https://github.com/dashboard"><i class="fa-brands fa-facebook"></i></a>
+
+          </div>
+          <!-- icon3 -->
+          <div class="icon">
+            <a href="https://wa.me/<+917994969074>"><i class="fa-brands fa-whatsapp"></i></a>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
